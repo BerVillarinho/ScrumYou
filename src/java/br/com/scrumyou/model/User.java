@@ -36,6 +36,7 @@ public class User implements Serializable {
 
     //continuar
     private String email;
+    private String password;
    
     /**
      *
