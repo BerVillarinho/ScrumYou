@@ -34,6 +34,9 @@ public class User implements Serializable {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
 
+    //continuar
+    private String email;
+   
     /**
      *
      * @return
