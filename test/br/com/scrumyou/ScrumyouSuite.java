@@ -19,7 +19,7 @@ import org.junit.runners.Suite;
  * @author raphael
  */
 @RunWith(Suite.class)
-@Suite.SuiteClasses({br.com.scrumyou.model.ModelSuite.class, br.com.scrumyou.controller.ControllerSuite.class})
+@Suite.SuiteClasses({br.com.scrumyou.model.ModelSuite.class, br.com.scrumyou.control.SignUpManagedBeanTest.class})
 public class ScrumyouSuite {
 
     /**

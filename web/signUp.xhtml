@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html  xmlns="http://www.w3.org/1999/xhtml"
+       xmlns:h="http://java.sun.com/jsf/html"
+       xmlns:f="http://java.sun.com/jsf/core"
+       xmlns:ui="http://java.sun.com/jsf/facelets"
+       xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Sign up Page</title>
+    </h:head>
+    <h:body>
+        <p:layout fullPage="true">
+            <p:layoutUnit position="north" >
+                <p:outputLabel value="North"/>
+            </p:layoutUnit>
+
+            <p:layoutUnit position="west">
+                <p:outputLabel value="Teste west"/>
+            </p:layoutUnit>
+
+            <p:layoutUnit position="center">
+                <h:form>
+                    <p:panel>
+                        <p:messages id="errorPw" showDetail="false" autoUpdate="true"/>
+                        
+                        <p:panelGrid columns="2" >
+                            <p:outputLabel for="name" value="Name"/>
+                            <p:inputText id="name" value="#{signUpManagedBean.user.name}" required="true"/>
+
+                            <p:outputLabel for="email" value="Email"/>
+                            <p:inputText id="email" value="#{signUpManagedBean.user.email}" required="true"/>
+
+                            <p:outputLabel for="password" value="Password"/>
+                            <p:password id="password" value="#{signUpManagedBean.user.password}" required="true"/>
+
+                            <p:commandButton id="submit" value="Submit" action="#{signUpManagedBean.signUp}"/>
+
+                        </p:panelGrid>
+                    </p:panel>
+                </h:form>
+
+            </p:layoutUnit>
+
+            <p:layoutUnit position="south">
+                <p:outputLabel value="Teste south"/>
+            </p:layoutUnit>
+
+        </p:layout>
+    </h:body>
+</html>
+
